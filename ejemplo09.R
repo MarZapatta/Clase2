@@ -24,5 +24,8 @@ sum(excel_air$Observaciones, na.rm= TRUE) #hay cero elementos no -NA
 sum(excel_air$Fechas, na.rm= TRUE) #hay cero elementos no -NA
 
 excel_air <- read_excel(path = "excel_prueba.xlsx", sheet = "airquality", skip = 3, na = '-')
-excel_air[,-c(1,6,11)]
+excel_air[ ,-c(1,6,11)]
 excel_air <- na.omit(excel_air)
+
+  
+
